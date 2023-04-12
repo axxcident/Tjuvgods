@@ -217,7 +217,7 @@ export default {
       // }
     },
     mounted(){
-      fetch('/productapi.json')
+      fetch('https://api.mockaroo.com/api/ad8c4cc0?count=0&key=d04bfc30')
       .then(Response => Response.json())
       .then(productapi => {
         this.products = productapi
@@ -235,7 +235,7 @@ export default {
       });
     },
     async fetchProducts() {
-      const result = await axios.get("productapi.json", {
+      const result = await axios.get("https://api.mockaroo.com/api/ad8c4cc0?count=0&key=d04bfc30", {
         headers: {
           Accept: "application/json",
         },

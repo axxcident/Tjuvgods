@@ -95,7 +95,7 @@ export default {
       this.$router.push("/products");
     },
     async fetchProduct() {
-      const result = await axios.get("/productapi.json", {
+      const result = await axios.get("https://api.mockaroo.com/api/ad8c4cc0?count=0&key=d04bfc30", {
         headers: {
           Accept: "application/json",
         },
